@@ -1,0 +1,26 @@
+## intent:find_weather
+- How is the weather in [Bonn](location)?
+- How is the weather in [Cologne](location)?
+- What is the weather in [Frankfurt](location)?
+- What is the weather in [New york](location)?
+- What is the weather in [Paris](location)?
+- How is the weather in [Vienna](location)?
+- Tell me weather in [Amsterdam](location)?
+- Could you please tell about weather in [Berlin](location)?
+
+## intent:greet
+- hey
+- hello
+- good morning
+- good evening
+- holla
+- hallo
+- bonjour
+
+## intent: good_bye
+- good bye
+- bye bye
+- see you later
+- see you around
+- ta ta
+- Ciao
