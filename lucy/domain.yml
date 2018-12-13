@@ -1,0 +1,61 @@
+slots:
+  location:
+    type: text
+    initial_value: bonn
+    
+  cuisine:
+    type: text
+
+  weather_type:
+    type: text
+
+  time:
+    type: text
+    
+entities:
+
+  - GPE
+  - PERSON
+  - location
+  - time
+  - cuisine
+  - weather_type
+
+intents:
+
+  - greet
+  - goodbye
+  - restaurant_search
+  - my_name_is
+  - weather_search
+
+actions:
+
+- utter_greet
+- utter_goodbye
+- utter_happy
+- utter_my_name_is
+- action_show_restaurants
+- utter_did_that_help
+- utter_how_can_i_help_you
+- action_tell_weather
+
+templates:
+
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_how_can_i_help_you:
+  - text: "How can i help you?"
+
+  utter_happy:
+  - text: "I am happy"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_my_name_is:
+  - text: "Nice to meet you, {PERSON}"

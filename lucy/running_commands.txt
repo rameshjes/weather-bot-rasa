@@ -1,0 +1,4 @@
+
+python -m rasa_core_sdk.endpoint --actions actions
+
+python -m rasa_core.run -d models/dialogue/ -u projects/default/default/rasa_bot/ --endpoints endpoints.yml

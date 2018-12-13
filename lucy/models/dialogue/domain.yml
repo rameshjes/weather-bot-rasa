@@ -1,0 +1,57 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_happy
+- utter_my_name_is
+- action_show_restaurants
+- utter_did_that_help
+- utter_how_can_i_help_you
+- action_tell_weather
+config:
+  store_entities_as_slots: true
+entities:
+- GPE
+- PERSON
+- location
+- time
+- cuisine
+- weather_type
+intents:
+- goodbye:
+    use_entities: true
+- restaurant_search:
+    use_entities: true
+- greet:
+    use_entities: true
+- weather_search:
+    use_entities: true
+- my_name_is:
+    use_entities: true
+slots:
+  cuisine:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: bonn
+    type: rasa_core.slots.TextSlot
+  time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  weather_type:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How can I help you?
+  utter_happy:
+  - text: I am happy
+  utter_how_can_i_help_you:
+  - text: How can i help you?
+  utter_my_name_is:
+  - text: Nice to meet you, {PERSON}
